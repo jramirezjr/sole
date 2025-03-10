@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Sole Specialists - Expert Foot & Ankle Care in Columbus, OH',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,123 +25,119 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Book an appointment',
+        href: 'tel:+17403506636',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:phone',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Our services', href: '/services' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/marathon.jpg', alt: 'Marathon Runners' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      Expert Foot & Ankle Care for Every Step You Take
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+        <span class=""><span class="font-bold">Relief. Recovery. Results. </span> Our team provides personalized care to keep you moving pain-free.</span
+      ></span>
+
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <Content
+  isReversed
+  tagline="Why Choose Us?"
+  title="The Sole difference"
+  items={[
+    {
+      title: 'Personalized Treatment Plans',
+      description:
+        'Every patient gets a tailored care approach.',
+    },
+    {
+      title: 'Advanced Techniques & Technology',
+      description:
+        'Utilizing the latest in podiatric medicine.',
+    },
+    {
+      title: 'Compassionate, Expert-Led Care',
+      description:
+        'Led by Dr. Staravecka, dedicated to patient wellness.'
+    },
+  ]}
+  image={{
+    src: '~/assets/images/foot-xray.jpg',
+    alt: 'Colorful Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The Right Care, The Right Treatment, The Right Results.</h3>
+  </Fragment>
 
-  <Note />
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+  <!-- Note Widget ******************* -->
+  <!-- <Note /> -->
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Services"
+    title="Healthy Feet, Happy Sole"
+    subtitle="Expert foot and ankle care with precision, compassion, and a commitment to your well-being. Every treatment is tailored to your unique needs, ensuring you receive the highest level of attention and expertise—because your comfort and health matter to us."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Sports Injuries & Foot Pain',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Relief for sprains, tendon issues, and chronic discomfort',
+          icon: 'tabler:play-football',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Corrective & Surgical Care',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Solutions for bunions, hammer toes, and structural concerns',
+          icon: 'tabler:clipboard-heart',
       },
       {
-        title: 'Best Practices',
+        title: 'Skin & Nail Health',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Treatment for athlete\'s foot, warts, and ingrown nails',
+          icon: 'tabler:activity',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Diabetic & Geriatric Foot Care',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Specialized care to prevent complications',
+          icon: 'tabler:medical-cross-circle',
+        
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Custom Solutions & Preventive Care',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Orthotics, casting, and education for lasting support',
+          icon: 'tabler:shoe',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Chronic Conditions & Joint Health',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Arthritis, gout, and long-term foot care management',
+        icon: 'tabler:stethoscope',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
 
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isAfterContent
     items={[
       {
@@ -174,11 +170,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -212,45 +208,46 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Steps Widget ****************** -->
-
+  <!-- TODO: steps to book? -->
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Your Path to Pain-Free Living"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Identify the Problem</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          '<span class="font-bold">Listen to Your Feet</span> - Foot pain, discomfort, or mobility issues shouldn\'t be ignored. If you\'re experiencing persistent pain, swelling, or difficulty walking, it\'s time to take action.',
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Get Expert Diagnosis</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          '<span class="font-bold">Personalized Assessment</span> - Schedule an appointment with Dr. Staravecka for a thorough evaluation. We use advanced diagnostics to pinpoint the cause of your discomfort and create a custom treatment plan.',
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Receive Tailored Treatment</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          '<span class="font-bold">Targeted Solutions</span> - Whether it\'s conservative care, custom orthotics, therapy, or surgery, we provide the right treatment for lasting relief. Our goal is to help you heal, move, and feel better—faster.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Take the Next Step!',
+        description:  '<span class="font-bold">Schedule Your Visit Today</span> - Don\'t wait for the pain to get worse. Early treatment leads to better outcomes. Call now to schedule your appointment and take the first step toward healthy, pain-free movement.',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: '~/assets/images/stair-climb.jpg',
       alt: 'Steps image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -310,21 +307,22 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
+  <!-- <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!-- TODO: come up with FAQs -->
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -361,18 +359,18 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /> -->
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -380,20 +378,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Call us',
+        href: 'tel:+17403506636',
+        // target: '_blank',
+        icon: 'tabler:phone',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Ready for Expert Foot & Ankle Care?<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Our team is here to help you find relief and get back on your feet. <br class="hidden md:inline" />Call us today to schedule your appointment!
     </Fragment>
   </CallToAction>
 </Layout>

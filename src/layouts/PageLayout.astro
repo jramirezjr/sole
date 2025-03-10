@@ -17,10 +17,11 @@ const { metadata } = Astro.props;
 
 <Layout metadata={metadata}>
   <slot name="announcement">
-    <Announcement />
+    <!-- TODO: Can use this to announce open day or maybe online bill pay to move out of header -->
+    <!-- <Announcement /> -->
   </slot>
   <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <Header {...headerData} isSticky  />
   </slot>
   <main>
     <slot />
