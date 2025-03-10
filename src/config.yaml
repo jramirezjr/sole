@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Sole Specialists
+  site: 'https://solespecialists.com'
   base: '/'
   trailingSlash: false
 
@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Sole Foot & Ankle Specialists
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/sole-logo.png'
         width: 1200
         height: 628
     type: website
