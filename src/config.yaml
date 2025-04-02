@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Sole Foot & Ankle Specialists - Podiatry in Columbus, Ohio
-    template: '%s — AstroWind'
+    template: '%s — Sole Foot & Ankle Specialists'
   description: "\U0001F680 Expert podiatry care in Columbus, Ohio. Sole Foot & Ankle Specialists offers comprehensive foot and ankle care for all ages. Book an appointment today!"
   robots:
     index: true

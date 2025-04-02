@@ -15,6 +15,10 @@ export const headerData = {
       href: '/contact'
 
     },
+    {
+      text: 'Patient Portal',
+      href: 'https://solespecialists.ema.md',
+    }
     // Example with submenu
     // {
     //   text: 'Blog',
@@ -43,23 +47,42 @@ export const headerData = {
     // },
 
   ],
-  actions: [{ text: 'Pay my bill', href: 'https://solespecialists.ema.md/ema/pay/onlinepay', target: '_blank' }],
+  actions: [{ text: 'Pay my bill', href: 'https://solespecialists.ema.md/ema/pay/onlinepay', target: '_blank' }, 
+  ],
 };
 
 export const footerData = {
   // TODO: Maybe replace footer with map or contact form
   links: [
     {
-      title: 'About',
+      title: null,
+      links: [
+        {
+          text: 'About',
+          href: '/about'
+        },
+        {
+          text: 'Services',
+          href: '/services'
+        },
+        {
+          text: 'Contact',
+          href: '/contact'
+        },
+        {
+          text: 'Patient Portal',
+          href: 'https://solespecialists.ema.md',
+          target: '_blank'
+        },
+        {
+          text: 'Pay my bill',
+          href: 'https://solespecialists.ema.md/ema/pay/onlinepay',
+          target: '_blank'
+        }
+      ]
 
     },
-    {
-      title: 'Services'
-    },
-    {
-      title: 'Contact',
 
-    },
 
   ],
   secondaryLinks: [
