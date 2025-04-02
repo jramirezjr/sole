@@ -97,12 +97,12 @@ const {
       <div class=" inset-0 z-10 col-start-1 row-start-1">
         {
           image && (
-            <div class="relative w-full h-full brightness-50">
+            <div class="lg:flex lg:justify-center relative w-full h-full brightness-50">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class=" inset-0 w-full h-full object-cover"
+                  class="inset-0 w-full h-full object-cover"
                   widths={[400, 768, 1024, 2040]}
                   sizes="100vw"
                   loading="eager"
