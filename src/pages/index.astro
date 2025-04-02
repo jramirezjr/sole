@@ -2,20 +2,23 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from '~/components/common/Image.astro';
+
 
 const metadata = {
   title: 'Sole Specialists - Expert Foot & Ankle Care in Columbus, OH',
   ignoreTitleTemplate: true,
 };
+
+const imgUrls = [
+  '~/assets/images/building-1.JPG',
+  '~/assets/images/patient-room.JPG',
+  '~/assets/images/waiting-room.JPG',
+];
 ---
 
 <Layout metadata={metadata}>
@@ -372,6 +375,42 @@ const metadata = {
     ]}
   /> -->
 
+  <!--  Photos of practice -->
+  <div class="flex-col p-4 justify-center">
+    <h2 class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl">Our Practice</h2>
+
+    <div class="flex flex-col lg:flex-row gap-4 mt-4">
+      <Image
+      src={imgUrls[0]}
+      class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+      width={500}
+      height={500}
+      widths={[400, 768]}
+      sizes="(max-width: 768px) 100vw, 432px"
+      layout="responsive"
+      alt="building"
+      />
+
+      <Image
+      class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg lg:w-1/3"
+      src="~/assets/images/patient-room.JPG"
+      width={500}
+      height={500}
+      widths={[400, 768]}
+      sizes="(max-width: 768px) 100vw, 432px"
+      alt="patient room"
+      />
+      <Image
+      class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg lg:w-1/3"
+      src="~/assets/images/waiting-room.JPG"
+      width={500}
+      height={500}
+      widths={[400, 768]}
+      sizes="(max-width: 768px) 100vw, 432px"
+      alt="waiting room"
+      />
+    </div>
+  </div>
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
