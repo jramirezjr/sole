@@ -16,6 +16,8 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 import { ClientRouter } from 'astro:transitions';
 
 import type { MetaData as MetaDataType } from '~/types';
+import Button from '~/components/ui/Button.astro';
+import { Icon } from 'astro-icon/components';
 
 export interface Props {
   metadata?: MetaDataType;
@@ -44,5 +46,17 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
+    <div class="relative">
+    <div class="flex justify-center md:justify-end">
+      <Button
+      variant="primary"
+      class={`fixed bottom-4 md:right-4`}
+      href='https://www.zocdoc.com/practice/sole-foot-and-ankle-specialists-136571?lock=true&isNewPatient=false&referrerType=widget'
+    >
+      <Icon name="tabler:calendar-time" class="w-6 h-6" />
+      <p class="ml-2">Book online</p>
+    </Button>
+    </div>
+    </div>
   </body>
 </html>
