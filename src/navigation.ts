@@ -18,6 +18,29 @@ export const headerData = {
     {
       text: 'Patient Portal',
       href: 'https://solespecialists.ema.md',
+    },
+    {
+      text: 'Documents',
+      links: [
+        {
+          text: 'Intake Form',
+          href: '/public/documents/Intake_Form.pdf',
+          download: true,
+          fileName: 'Intake_Form.pdf',
+        },
+        {
+          text: 'Injection Consent',
+          href: 'public/documents/Injection_Consent.pdf',
+          download: true,
+          fileName: 'Injection_Consent.pdf',
+        },
+        {
+          text: 'DME Dispense',
+          href: 'public/documents/DME_Dispense.pdf',
+          download: true,
+          fileName: 'DME_Dispense.pdf',
+        },
+      ]
     }
     // Example with submenu
     // {
@@ -78,7 +101,7 @@ export const footerData = {
           text: 'Pay my bill',
           href: 'https://solespecialists.ema.md/ema/pay/onlinepay',
           target: '_blank'
-        }
+        },
       ]
 
     },
