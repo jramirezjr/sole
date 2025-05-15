@@ -24,19 +24,19 @@ export const headerData = {
       links: [
         {
           text: 'Intake Form',
-          href: '/public/documents/Intake_Form.pdf',
+          href: '/public/documents/Sole_Intake_Form.pdf',
           download: true,
           fileName: 'Intake_Form.pdf',
         },
         {
           text: 'Injection Consent',
-          href: 'public/documents/Injection_Consent.pdf',
+          href: 'public/documents/Sole_Injection_Consent.pdf',
           download: true,
           fileName: 'Injection_Consent.pdf',
         },
         {
           text: 'DME Dispense',
-          href: 'public/documents/DME_Dispense.pdf',
+          href: 'public/documents/Sole_DME_Dispense.pdf',
           download: true,
           fileName: 'DME_Dispense.pdf',
         },
